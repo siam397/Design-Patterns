@@ -9,14 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Behavioral\Adapter\" />
     <Folder Include="Behavioral\Bridge\" />
     <Folder Include="Behavioral\Composite\" />
     <Folder Include="Behavioral\Decorator\" />
     <Folder Include="Behavioral\Facade\" />
     <Folder Include="Behavioral\Flyweight\" />
     <Folder Include="Behavioral\Proxy\" />
-    <Folder Include="Creational\Factory Method\" />
     <Folder Include="Creational\Abstract Factory\" />
     <Folder Include="Creational\Builder\" />
     <Folder Include="Creational\Prototype\" />
@@ -29,7 +27,6 @@
     <Folder Include="Structural\Memento\" />
     <Folder Include="Structural\Observer\" />
     <Folder Include="Structural\State\" />
-    <Folder Include="Structural\Strategy\" />
     <Folder Include="Structural\TemplateMethod\" />
     <Folder Include="Structural\Visitor\" />
   </ItemGroup>
