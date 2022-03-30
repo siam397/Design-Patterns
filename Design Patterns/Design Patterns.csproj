@@ -25,7 +25,6 @@
     <Folder Include="Structural\Iterator\" />
     <Folder Include="Structural\Mediator\" />
     <Folder Include="Structural\Memento\" />
-    <Folder Include="Structural\Observer\" />
     <Folder Include="Structural\State\" />
     <Folder Include="Structural\TemplateMethod\" />
     <Folder Include="Structural\Visitor\" />
