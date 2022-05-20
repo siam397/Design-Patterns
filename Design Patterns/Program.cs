@@ -1,6 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-using Design_Patterns.Creational.Builder;
+﻿using Design_Patterns.Creational.Builder;
 using Design_Patterns.Creational.Factory_Method;
+using Design_Patterns.Creational.Prototype;
 using Design_Patterns.Structural.Observer;
 using Design_Patterns.Structural.Strategy;
 
@@ -8,9 +8,9 @@ using Design_Patterns.Structural.Strategy;
 
 
 //factory method
-WeaponInventory weaponInventory = new WeaponInventory();
-weaponInventory.setWeapons();
-weaponInventory.getWeapons();
+//WeaponInventory weaponInventory = new WeaponInventory();
+//weaponInventory.setWeapons();
+//weaponInventory.getWeapons();
 
 //observer pattern
 //Game game = new Game();
@@ -21,3 +21,15 @@ weaponInventory.getWeapons();
 //ICharacterBuilder samurai = new SamuraiBuilder();
 //characterCustomization.construct(samurai, "ronin");
 //samurai.showInformation();
+
+
+//prototype pattern
+//BossMimicTear mimicTear=new BossMimicTear();
+//BossMimicTear? mimicTearClone=mimicTear.Clone() as BossMimicTear;
+//Console.WriteLine("mimic tear attack");
+//mimicTear.Attack();
+
+//BossCloneMaster cloneMaster=new BossCloneMaster();
+//BossCloneMaster? cloneMasterClone=cloneMaster.Clone() as BossCloneMaster;
+//Console.WriteLine("clone master attack");
+//cloneMasterClone.Attack();

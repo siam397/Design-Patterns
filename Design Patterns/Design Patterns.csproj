@@ -16,8 +16,6 @@
     <Folder Include="Behavioral\Flyweight\" />
     <Folder Include="Behavioral\Proxy\" />
     <Folder Include="Creational\Abstract Factory\" />
-    <Folder Include="Creational\Prototype\" />
-    <Folder Include="Creational\Singleton\" />
     <Folder Include="Structural\ChainofResponsibility\" />
     <Folder Include="Structural\Command\" />
     <Folder Include="Structural\Interpreter\" />
