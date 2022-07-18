@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <Folder Include="Behavioral\Bridge\" />
-    <Folder Include="Behavioral\Flyweight\" />
     <Folder Include="Behavioral\Proxy\" />
     <Folder Include="Creational\Abstract Factory\" />
     <Folder Include="Structural\Command\" />

@@ -102,22 +102,64 @@
 
 
 
-//Decorator Pattern
+//Decorator Pattern//
 
-using Design_Patterns.Behavioral.Decorator;
+//using Design_Patterns.Behavioral.Decorator;
 
-Book book = new Book("Worley", "Inside ASP.NET", 10);
-book.Display();
-Video video = new Video("Jaws", 23, "1:30:23");
-video.Display();
-Console.WriteLine("\nAfter Himel Mia and Fahim Kabir borrows the book");
-Borrowable borrowvideo = new Borrowable(video);
-borrowvideo.LendACopy("Fahim Kabir");
-borrowvideo.LendACopy("Himel Mia");
-borrowvideo.ExtendedFeatures();
-video.Display();
-borrowvideo.ReceiveACopy("Himel Mia");
-Console.WriteLine("After himel mia gives back the book\n");
-borrowvideo.ExtendedFeatures();
-video.Display();
-Console.ReadKey();
+//Book book = new Book("Worley", "Inside ASP.NET", 10);
+//book.Display();
+//Video video = new Video("Jaws", 23, "1:30:23");
+//video.Display();
+//Console.WriteLine("\nAfter Himel Mia and Fahim Kabir borrows the book");
+//Borrowable borrowvideo = new Borrowable(video);
+//borrowvideo.LendACopy("Fahim Kabir");
+//borrowvideo.LendACopy("Himel Mia");
+//borrowvideo.ExtendedFeatures();
+//video.Display();
+//borrowvideo.ReceiveACopy("Himel Mia");
+//Console.WriteLine("After himel mia gives back the book\n");
+//borrowvideo.ExtendedFeatures();
+//video.Display();
+//Console.ReadKey();
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Flyweight Pattern//
+
+using Design_Patterns.Behavioral.Flyweight;
+
+string[] weapons = new string[] { "AK47", "M4A4", "SCAR20", "DEAGLE", "AWP" };
+
+for (int i = 0; i < 5; i++)
+{
+    Player player = PlayerFactory.GetPlayer("Terrorist");
+    AssignRandomWeaponForPlayer(player);
+    player.Display();
+    Console.WriteLine("\n");
+}
+
+for (int i = 0; i < 5; i++)
+{
+    Player player = PlayerFactory.GetPlayer("CounterTerrorist");
+    AssignRandomWeaponForPlayer(player);
+    player.Display();
+    Console.WriteLine("\n");
+}
+
+
+void AssignRandomWeaponForPlayer(Player player)
+{
+    Random r = new Random();
+    int rInt = r.Next(0, 5);
+    player.AssignWeapon(weapons[rInt]);
+}
