@@ -10,8 +10,6 @@
 
   <ItemGroup>
     <Folder Include="Behavioral\Bridge\" />
-    <Folder Include="Behavioral\Decorator\" />
-    <Folder Include="Behavioral\Facade\" />
     <Folder Include="Behavioral\Flyweight\" />
     <Folder Include="Behavioral\Proxy\" />
     <Folder Include="Creational\Abstract Factory\" />
@@ -21,7 +19,6 @@
     <Folder Include="Structural\Mediator\" />
     <Folder Include="Structural\Memento\" />
     <Folder Include="Structural\State\" />
-    <Folder Include="Structural\TemplateMethod\" />
     <Folder Include="Structural\Visitor\" />
   </ItemGroup>
 
