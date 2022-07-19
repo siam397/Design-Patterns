@@ -8,7 +8,7 @@ namespace Design_Patterns.Structural.Strategy
 {
     public class Player
     {
-        private Consumable consumable=new Consumable();
+        private ConsumeItem consumable=new ConsumeItem();
         public void consume()
         {
             consumable.consume(new HealingFlask());

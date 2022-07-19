@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Design_Patterns.Structural.Strategy
 {
-    internal interface IConsumable
+    public interface IConsumable
     {
         void consume();
     }

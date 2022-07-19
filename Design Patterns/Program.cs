@@ -136,30 +136,60 @@
 
 //Flyweight Pattern//
 
-using Design_Patterns.Behavioral.Flyweight;
+//using Design_Patterns.Behavioral.Flyweight;
 
-string[] weapons = new string[] { "AK47", "M4A4", "SCAR20", "DEAGLE", "AWP" };
+//string[] weapons = new string[] { "AK47", "M4A4", "SCAR20", "DEAGLE", "AWP" };
 
-for (int i = 0; i < 5; i++)
-{
-    Player player = PlayerFactory.GetPlayer("Terrorist");
-    AssignRandomWeaponForPlayer(player);
-    player.Display();
-    Console.WriteLine("\n");
-}
+//for (int i = 0; i < 5; i++)
+//{
+//    Player player = PlayerFactory.GetPlayer("Terrorist");
+//    AssignRandomWeaponForPlayer(player);
+//    player.Display();
+//    Console.WriteLine("\n");
+//}
 
-for (int i = 0; i < 5; i++)
-{
-    Player player = PlayerFactory.GetPlayer("CounterTerrorist");
-    AssignRandomWeaponForPlayer(player);
-    player.Display();
-    Console.WriteLine("\n");
-}
+//for (int i = 0; i < 5; i++)
+//{
+//    Player player = PlayerFactory.GetPlayer("CounterTerrorist");
+//    AssignRandomWeaponForPlayer(player);
+//    player.Display();
+//    Console.WriteLine("\n");
+//}
 
 
-void AssignRandomWeaponForPlayer(Player player)
-{
-    Random r = new Random();
-    int rInt = r.Next(0, 5);
-    player.AssignWeapon(weapons[rInt]);
-}
+//void AssignRandomWeaponForPlayer(Player player)
+//{
+//    Random r = new Random();
+//    int rInt = r.Next(0, 5);
+//    player.AssignWeapon(weapons[rInt]);
+//}
+
+
+
+
+
+
+
+//Abstract Factory Pattern//
+
+using Design_Patterns.Creational.Abstract_Factory;
+
+AbstractFormFactory androidForm= new AbstractAndroidFormFactory();
+IButton androidButton = androidForm.GetButton();
+IInputField androidInput = androidForm.GetInputField();
+androidInput.SetDefaultValue("ANDROID");
+androidInput.AddValidation("MIN VALUE 6");
+androidInput.ListenToChange();
+androidButton.AddButtonClickListener();
+
+AbstractFormFactory appleForm = new AbstractAppleFormFactory();
+IButton appleButton = appleForm.GetButton();
+IInputField appleInput = appleForm.GetInputField();
+appleInput.SetDefaultValue("APPLE");
+appleInput.AddValidation("MIN VALUE 8");
+appleInput.ListenToChange();
+appleButton.AddButtonClickListener();
+
+
+
+
