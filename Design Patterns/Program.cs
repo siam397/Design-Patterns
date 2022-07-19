@@ -172,23 +172,53 @@
 
 //Abstract Factory Pattern//
 
-using Design_Patterns.Creational.Abstract_Factory;
+//using Design_Patterns.Creational.Abstract_Factory;
 
-AbstractFormFactory androidForm= new AbstractAndroidFormFactory();
-IButton androidButton = androidForm.GetButton();
-IInputField androidInput = androidForm.GetInputField();
-androidInput.SetDefaultValue("ANDROID");
-androidInput.AddValidation("MIN VALUE 6");
-androidInput.ListenToChange();
-androidButton.AddButtonClickListener();
+//AbstractFormFactory androidForm= new AbstractAndroidFormFactory();
+//IButton androidButton = androidForm.GetButton();
+//IInputField androidInput = androidForm.GetInputField();
+//androidInput.SetDefaultValue("ANDROID");
+//androidInput.AddValidation("MIN VALUE 6");
+//androidInput.ListenToChange();
+//androidButton.AddButtonClickListener();
 
-AbstractFormFactory appleForm = new AbstractAppleFormFactory();
-IButton appleButton = appleForm.GetButton();
-IInputField appleInput = appleForm.GetInputField();
-appleInput.SetDefaultValue("APPLE");
-appleInput.AddValidation("MIN VALUE 8");
-appleInput.ListenToChange();
-appleButton.AddButtonClickListener();
+//AbstractFormFactory appleForm = new AbstractAppleFormFactory();
+//IButton appleButton = appleForm.GetButton();
+//IInputField appleInput = appleForm.GetInputField();
+//appleInput.SetDefaultValue("APPLE");
+//appleInput.AddValidation("MIN VALUE 8");
+//appleInput.ListenToChange();
+//appleButton.AddButtonClickListener();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//State Pattern//
+
+using Design_Patterns.Structural.State;
+
+MobileAlertContext alertContext = new MobileAlertContext(new RingAlert());
+alertContext.HandleOperation();
+
+alertContext.SetState(new VibrationAlert());
+alertContext.HandleOperation();
+
+alertContext.SetState(new SilentAlert());
+alertContext.HandleOperation();
+
+
+
+
 
 
 

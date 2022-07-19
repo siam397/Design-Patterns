@@ -16,7 +16,6 @@
     <Folder Include="Structural\Iterator\" />
     <Folder Include="Structural\Mediator\" />
     <Folder Include="Structural\Memento\" />
-    <Folder Include="Structural\State\" />
     <Folder Include="Structural\Visitor\" />
   </ItemGroup>
 
