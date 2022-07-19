@@ -1,6 +1,6 @@
-﻿namespace Design_Patterns.Behavioral.ChainofResponsibility
+﻿namespace Design_Patterns.Behavioral.ChainofResponsibility.LoggerChain
 {
-    public class InfoLogger:Logger
+    public class InfoLogger : Logger
     {
         public InfoLogger(int level)
         {
@@ -9,7 +9,7 @@
 
         public override void Write(string message)
         {
-            Console.WriteLine("INFO :: "+message);
+            Console.WriteLine("INFO :: " + message);
         }
     }
 }

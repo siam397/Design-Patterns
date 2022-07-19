@@ -43,12 +43,21 @@
 
 
 
-//Chain of Responsibility pattern//
-//using Design_Patterns.Behavioral.ChainofResponsibility;
-//Logger logger= Logger.GetLoggerConfiguration();
+//Chain of Responsibility pattern with logger//
+//using Design_Patterns.Behavioral.ChainofResponsibility.Logger
+//Logger logger = Logger.GetLoggerConfiguration();
 //logger.logMessage(Logger.ERROR, "Error in server");
 //logger.logMessage(Logger.WARNING, "Should use using keyword");
 //logger.logMessage(Logger.INFO, "logger function works");
+
+
+
+
+//Chain of Responsibility pattern with auth//
+//using Design_Patterns.Behavioral.ChainofResponsibility.Authentication;
+
+//AuthHandler authHandler= AuthHandler.GetAuthConfig();
+//authHandler.Handle("Himel Kabir", "FAHIMMIA");
 
 
 
@@ -205,16 +214,17 @@
 
 //State Pattern//
 
-using Design_Patterns.Structural.State;
+//using Design_Patterns.Structural.State;
 
-MobileAlertContext alertContext = new MobileAlertContext(new RingAlert());
-alertContext.HandleOperation();
+//MobileAlertContext alertContext = new MobileAlertContext(new RingAlert());
+//alertContext.HandleOperation();
 
-alertContext.SetState(new VibrationAlert());
-alertContext.HandleOperation();
+//alertContext.SetState(new VibrationAlert());
+//alertContext.HandleOperation();
 
-alertContext.SetState(new SilentAlert());
-alertContext.HandleOperation();
+//alertContext.SetState(new SilentAlert());
+//alertContext.HandleOperation();
+
 
 
 

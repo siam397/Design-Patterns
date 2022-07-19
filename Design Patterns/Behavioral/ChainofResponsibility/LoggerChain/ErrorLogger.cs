@@ -1,4 +1,4 @@
-﻿namespace Design_Patterns.Behavioral.ChainofResponsibility
+﻿namespace Design_Patterns.Behavioral.ChainofResponsibility.LoggerChain
 {
     public class ErrorLogger : Logger
     {

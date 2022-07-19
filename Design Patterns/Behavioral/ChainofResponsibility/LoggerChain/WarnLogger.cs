@@ -1,6 +1,6 @@
-﻿namespace Design_Patterns.Behavioral.ChainofResponsibility
+﻿namespace Design_Patterns.Behavioral.ChainofResponsibility.LoggerChain
 {
-    internal class WarnLogger:Logger
+    internal class WarnLogger : Logger
     {
         public WarnLogger(int level)
         {
@@ -9,7 +9,7 @@
 
         public override void Write(string message)
         {
-            Console.WriteLine("WARN :: "+message);
+            Console.WriteLine("WARN :: " + message);
         }
     }
 }

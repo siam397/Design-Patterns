@@ -1,4 +1,4 @@
-﻿namespace Design_Patterns.Behavioral.ChainofResponsibility
+﻿namespace Design_Patterns.Behavioral.ChainofResponsibility.LoggerChain
 {
     public abstract class Logger
     {
@@ -24,7 +24,7 @@
             _nextLog = nextLog;
         }
 
-        public void logMessage(int level, String message)
+        public void logMessage(int level, string message)
         {
             if (_level <= level)
             {
